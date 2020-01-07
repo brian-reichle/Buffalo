@@ -1,0 +1,8 @@
+# Build Artifacts
+obj
+bin
+
+# Visual Studio
+.vs
+*.csproj.user
+*.shproj.user

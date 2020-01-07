@@ -1,0 +1,86 @@
+<!-- Copyright (c) Brian Reichle.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information. -->
+<Window
+	x:ClassModifier="internal"
+	x:Class="Buffalo.Main.NewFileDialog"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:Buffalo.Main"
+	xmlns:genCore="clr-namespace:Buffalo.Core;assembly=Buffalo.Core"
+	Title="New"
+	Height="150"
+	Width="300"
+	MinHeight="150"
+	MinWidth="300"
+	ResizeMode="NoResize"
+	ShowInTaskbar="False"
+	WindowStartupLocation="CenterOwner"
+	Focusable="False"
+	mc:Ignorable="d"
+	d:DataContext="{d:DesignInstance {x:Type local:NewFileManager}}"
+	>
+	<DockPanel
+		KeyboardNavigation.TabNavigation="Local">
+		<StackPanel
+			DockPanel.Dock="Bottom"
+			Orientation="Horizontal"
+			FlowDirection="RightToLeft"
+			Margin="3">
+			<Button
+				Width="75"
+				IsDefault="True"
+				Click="OkButton_Click"
+				KeyboardNavigation.TabIndex="4">
+				Ok
+			</Button>
+			<Button
+				Width="75"
+				IsCancel="True"
+				Click="CancelButton_Click"
+				Margin="3,0"
+				KeyboardNavigation.TabIndex="5">
+				Cancel
+			</Button>
+		</StackPanel>
+		<DockPanel
+			DockPanel.Dock="Bottom"
+			Margin="3">
+			<TextBlock DockPanel.Dock="Left">File Name</TextBlock>
+			<TextBox
+				Margin="3,0"
+				Text="{Binding Path=FileName}"
+				KeyboardNavigation.TabIndex="3" />
+		</DockPanel>
+		<StackPanel>
+			<StackPanel.Resources>
+				<ControlTemplate TargetType="{x:Type RadioButton}" x:Key="buttonTemplate">
+					<Border x:Name="border" BorderThickness="1" SnapsToDevicePixels="true" BorderBrush="Black" Margin="3, 3, 3, 0" Padding="6, 1" CornerRadius="4" >
+						<ContentPresenter VerticalAlignment="Center" />
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsChecked" Value="True">
+							<Setter TargetName="border" Property="Background" Value="LightCyan" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+				<Style TargetType="RadioButton">
+					<Setter Property="Template" Value="{StaticResource buttonTemplate}" />
+				</Style>
+			</StackPanel.Resources>
+			<RadioButton
+				Template="{StaticResource buttonTemplate}"
+				IsChecked="{Binding Path=GeneratorType, Mode=TwoWay, Converter={StaticResource enumConverter}, ConverterParameter={x:Static Member=genCore:GeneratorType.Lexer}}"
+				KeyboardNavigation.TabIndex="1"
+				local:FocusHelper.IsInitialFocus="True">
+				Lexer
+			</RadioButton>
+			<RadioButton
+				Template="{StaticResource buttonTemplate}"
+				IsChecked="{Binding Path=GeneratorType, Mode=TwoWay, Converter={StaticResource enumConverter}, ConverterParameter={x:Static Member=genCore:GeneratorType.Parser}}"
+				KeyboardNavigation.TabIndex="2">
+				Parser
+			</RadioButton>
+		</StackPanel>
+	</DockPanel>
+</Window>

@@ -1,0 +1,77 @@
+<!-- Copyright (c) Brian Reichle.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information. -->
+<UserControl
+	x:ClassModifier="internal"
+	x:Class="Buffalo.Main.NotificationsGrid"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:Buffalo.Main"
+	Focusable="true"
+	FocusManager.IsFocusScope="true"
+	mc:Ignorable="d"
+	d:DataContext="{d:DesignInstance {x:Type local:NotificationCollection}}"
+	>
+
+	<UserControl.Resources>
+		<Style x:Key="ErrorableText" TargetType="{x:Type TextBlock}">
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding IsError}" Value="True">
+					<Setter Property="Foreground" Value="Red" />
+				</DataTrigger>
+			</Style.Triggers>
+			<Setter Property="TextWrapping" Value="Wrap" />
+		</Style>
+
+		<Style x:Key="NotificationItem" TargetType="{x:Type ListViewItem}">
+			<EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick" />
+		</Style>
+	</UserControl.Resources>
+
+	<ListView ItemsSource="{Binding}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ItemContainerStyle="{StaticResource NotificationItem}">
+		<ListView.View>
+			<GridView>
+				<GridViewColumn Width="20" Header="!">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock x:Name="CellContent" Style="{StaticResource ErrorableText}" />
+							<DataTemplate.Triggers>
+								<DataTrigger Binding="{Binding IsError}" Value="True">
+									<Setter TargetName="CellContent" Property="Text" Value="!" />
+								</DataTrigger>
+							</DataTemplate.Triggers>
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+				<GridViewColumn Width="250" Header="Description">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Path=Text}" Style="{StaticResource ErrorableText}" />
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+				<GridViewColumn Width="80" Header="File">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Path=Page.FileName}" Style="{StaticResource ErrorableText}" />
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+				<GridViewColumn Width="50" Header="Line">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Path=FromLineNo}" Style="{StaticResource ErrorableText}" />
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+				<GridViewColumn Width="50" Header="Column">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Path=FromCharNo}" Style="{StaticResource ErrorableText}" />
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+			</GridView>
+		</ListView.View>
+	</ListView>
+</UserControl>

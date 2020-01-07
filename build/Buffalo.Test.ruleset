@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Buffalo" ToolsVersion="14.0">
+  <Include Path="Buffalo.ruleset" Action="Default" />
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1707" Action="None" />
+  </Rules>
+</RuleSet>

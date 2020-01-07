@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" width="4961" height="1758" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css"><![CDATA[
+rect
+{
+	fill: rgb(255,255,255);
+	stroke-width: 1;
+	stroke: rgb(0,0,0);
+}
+
+line, path
+{
+	stroke-width: 1;
+	stroke: rgb(0,0,0);
+	fill-opacity: 0.0;
+}
+
+text
+{
+	fill: rgb(0,0,0);
+	font-family: sans-serif;
+	font-size: 10px;
+	text-anchor: left;
+}
+
+text.si
+{
+	font-size: 20px;
+	text-anchor: end;
+}
+]]></style>
+	<g transform="translate(0,-195)">
+		<path d="M412,1176 C885,1176 569,862 1043,862 C1544,862 1210,548 1711,548" />
+		<path d="M412,1176 C885,1176 569,924 1043,924 C1544,924 1210,673 1711,673" />
+		<path d="M412,1176 C885,1176 569,1202 1043,1202 C1544,1202 1210,1228 1711,1228" />
+		<path d="M412,1176 C885,1176 569,1358 1043,1358 C1544,1358 1210,1541 1711,1541" />
+		<path d="M412,1176 C885,1176 569,1154 1043,1154 C1544,1154 1210,1133 1711,1133" />
+		<path d="M412,1176 C885,1176 569,1271 1043,1271 C1544,1271 1210,1367 1711,1367" />
+		<path d="M412,1176 C885,1176 569,1465 1043,1465 C1544,1465 1210,1755 1711,1755" />
+		<path d="M1711,673 C2225,673 1882,692 2397,692 C3021,692 2605,702 3230,702" />
+		<path d="M1711,673 C2225,673 1882,467 2397,467 C3021,467 2605,302 3230,302" />
+		<path d="M1711,673 C2225,673 1882,602 2397,602 C3021,602 2605,542 3230,542" />
+		<path d="M1711,673 C2225,673 1882,557 2397,557 C3021,557 2605,462 3230,462" />
+		<path d="M1711,673 C2225,673 1882,757 2397,757 C3021,757 2605,842 3230,842" />
+		<path d="M1711,673 C2225,673 1882,647 2397,647 C3021,647 2605,622 3230,622" />
+		<path d="M1711,673 C2225,673 1882,512 2397,512 C3021,512 2605,382 3230,382" />
+		<path d="M1711,673 C2225,673 1882,422 2397,422 C3021,422 2605,222 3230,222" />
+		<path d="M1711,673 C2225,673 1882,845 2397,845 C3021,845 2605,1017 3230,1017" />
+		<path d="M1711,673 C2225,673 1882,982 2397,982 C3021,982 2605,1247 3230,1247" />
+		<path d="M1711,1228 C2225,1228 1882,1292 2397,1292 C3021,1292 2605,1357 3230,1357" />
+		<path d="M1711,1228 C2225,1228 1882,1152 2397,1152 C3021,1152 2605,1137 3230,1137" />
+		<path d="M1711,1228 C2225,1228 1882,1402 2397,1402 C3021,1402 2605,1582 3230,1582" />
+		<path d="M1711,1541 C2225,1541 1882,1852 2397,1852 C3021,1852 2605,1692 3230,1692" />
+		<path d="M1711,1755 C2225,1755 1882,1942 2397,1942 C3021,1942 2605,1797 3230,1797" />
+		<path d="M1711,1755 C1581,1755 1581,1429 1711,1429 C1822,1429 1822,1228 1711,1228" />
+		<path d="M1711,1755 C1580,1755 1580,1608 1711,1608 C1831,1608 1831,1541 1711,1541" />
+		<path d="M1711,1755 C1580,1755 1580,1305 1711,1305 C1822,1305 1822,1133 1711,1133" />
+		<path d="M1711,1755 C1581,1755 1581,1474 1711,1474 C1824,1474 1824,1367 1711,1367" />
+		<path d="M1711,1755 C1579,1755 1579,1653 1711,1653 C1842,1653 1842,1755 1711,1755" />
+		<path d="M3230,1017 C2605,1017 3021,937 2397,937 C1882,937 2225,1228 1711,1228" />
+		<path d="M3230,1017 C3710,1017 3390,866 3870,866 C4350,866 4030,715 4510,715" />
+		<path d="M3230,1017 C2605,1017 3021,1447 2397,1447 C1882,1447 2225,1541 1711,1541" />
+		<path d="M3230,1017 C2605,1017 3021,892 2397,892 C1882,892 2225,1133 1711,1133" />
+		<path d="M3230,1017 C2605,1017 3021,1337 2397,1337 C1882,1337 2225,1367 1711,1367" />
+		<path d="M3230,1017 C2605,1017 3021,1582 2397,1582 C1882,1582 2225,1755 1711,1755" />
+		<path d="M3230,1247 C2605,1247 3021,1537 2397,1537 C1882,1537 2225,1541 1711,1541" />
+		<path d="M3230,1247 C2605,1247 3021,1197 2397,1197 C1882,1197 2225,1133 1711,1133" />
+		<path d="M3230,1247 C3710,1247 3390,1288 3870,1288 C4350,1288 4030,1329 4510,1329" />
+		<path d="M3230,1247 C2605,1247 3021,1492 2397,1492 C1882,1492 2225,1367 1711,1367" />
+		<path d="M3230,1247 C2605,1247 3021,1762 2397,1762 C1882,1762 2225,1755 1711,1755" />
+		<path d="M3230,1582 C2605,1582 3021,1717 2397,1717 C1882,1717 2225,1541 1711,1541" />
+		<path d="M3230,1582 C2605,1582 3021,1627 2397,1627 C1882,1627 2225,1367 1711,1367" />
+		<path d="M3230,1582 C2605,1582 3021,1807 2397,1807 C1882,1807 2225,1755 1711,1755" />
+		<path d="M3230,1582 C3710,1582 3390,1581 3870,1581 C4350,1581 4030,1581 4510,1581" />
+		<path d="M3230,1692 C2605,1692 3021,1672 2397,1672 C1882,1672 2225,1367 1711,1367" />
+		<path d="M3230,1692 C2605,1692 3021,1897 2397,1897 C1882,1897 2225,1755 1711,1755" />
+		<path d="M3230,1692 C3710,1692 3390,1691 3870,1691 C4350,1691 4030,1691 4510,1691" />
+		<path d="M3230,1797 C3710,1797 3390,1796 3870,1796 C4350,1796 4030,1796 4510,1796" />
+		<path d="M3230,1797 C2974,1797 2974,915 3230,915 C3385,915 3385,382 3230,382" />
+		<path d="M3230,1797 C2935,1797 2935,780 3230,780 C3392,780 3392,222 3230,222" />
+		<path d="M3230,1797 C3114,1797 3114,1500 3230,1500 C3361,1500 3361,1247 3230,1247" />
+		<path d="M4510,715 C4030,715 4350,548 3870,548 C3390,548 3710,382 3230,382" />
+		<path d="M4510,715 C4030,715 4350,468 3870,468 C3390,468 3710,222 3230,222" />
+		<path d="M4510,715 C4030,715 4350,981 3870,981 C3390,981 3710,1247 3230,1247" />
+		<path d="M4510,1329 C4030,1329 4350,1343 3870,1343 C3390,1343 3710,1357 3230,1357" />
+		<path d="M4510,1329 C4030,1329 4350,1233 3870,1233 C3390,1233 3710,1137 3230,1137" />
+		<path d="M4510,1329 C4030,1329 4350,1455 3870,1455 C3390,1455 3710,1582 3230,1582" />
+		<g transform="translate(0,1104)">
+			<rect width="825" height="145" rx="20" />
+			<line x1="0" y1="25" x2="825" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">0</text>
+			<text x="5" y="40">[&lt;Equation'&gt; -&gt; • &lt;Equation&gt;, EOF]</text>
+			<text x="5" y="50">[&lt;Equation&gt; -&gt; • &lt;Expression&gt; &lt;ComparisonOp&gt; &lt;Expression&gt;, EOF]</text>
+			<text x="5" y="60">[&lt;Expression&gt; -&gt; • &lt;Term&gt;, Add/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/NotEqualTo/Subtract]</text>
+			<text x="5" y="70">[&lt;Expression&gt; -&gt; • &lt;Expression&gt; &lt;TermOp&gt; &lt;Term&gt;, Add/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/NotEqualTo/Subtract]</text>
+			<text x="5" y="80">[&lt;Factor&gt; -&gt; • &lt;Value&gt;, Add/Divide/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="90">[&lt;Factor&gt; -&gt; • &lt;Value&gt; Power &lt;Value&gt;, Add/Divide/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="100">[&lt;Term&gt; -&gt; • &lt;Factor&gt;, Add/Divide/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="110">[&lt;Term&gt; -&gt; • &lt;Term&gt; &lt;FactorOp&gt; &lt;Factor&gt;, Add/Divide/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="120">[&lt;Value&gt; -&gt; • Number, Add/Divide/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+			<text x="5" y="130">[&lt;Value&gt; -&gt; • OpenParen &lt;Expression&gt; CloseParen, Add/Divide/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+		</g>
+		<g transform="translate(1621,521)">
+			<rect width="180" height="55" rx="20" />
+			<line x1="0" y1="25" x2="180" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">11</text>
+			<text x="5" y="40">[&lt;Equation'&gt; -&gt; &lt;Equation&gt; •, EOF]</text>
+		</g>
+		<g transform="translate(1549,601)">
+			<rect width="325" height="145" rx="20" />
+			<line x1="0" y1="25" x2="325" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">1</text>
+			<text x="5" y="40">[&lt;ComparisonOp&gt; -&gt; • EqualTo, Number/OpenParen]</text>
+			<text x="5" y="50">[&lt;ComparisonOp&gt; -&gt; • GreaterThan, Number/OpenParen]</text>
+			<text x="5" y="60">[&lt;ComparisonOp&gt; -&gt; • GreaterThanOrEqualTo, Number/OpenParen]</text>
+			<text x="5" y="70">[&lt;ComparisonOp&gt; -&gt; • LessThan, Number/OpenParen]</text>
+			<text x="5" y="80">[&lt;ComparisonOp&gt; -&gt; • LessThanOrEqualTo, Number/OpenParen]</text>
+			<text x="5" y="90">[&lt;ComparisonOp&gt; -&gt; • NotEqualTo, Number/OpenParen]</text>
+			<text x="5" y="100">[&lt;TermOp&gt; -&gt; • Add, Number/OpenParen]</text>
+			<text x="5" y="110">[&lt;TermOp&gt; -&gt; • Subtract, Number/OpenParen]</text>
+			<text x="5" y="120">[&lt;Equation&gt; -&gt; &lt;Expression&gt; • &lt;ComparisonOp&gt; &lt;Expression&gt;, EOF]</text>
+			<text x="5" y="130">[&lt;Expression&gt; -&gt; &lt;Expression&gt; • &lt;TermOp&gt; &lt;Term&gt;]</text>
+		</g>
+		<g transform="translate(1336,1186)">
+			<rect width="750" height="85" rx="20" />
+			<line x1="0" y1="25" x2="750" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">2</text>
+			<text x="5" y="40">[&lt;FactorOp&gt; -&gt; • Divide, Number/OpenParen]</text>
+			<text x="5" y="50">[&lt;FactorOp&gt; -&gt; • Multiply, Number/OpenParen]</text>
+			<text x="5" y="60">[&lt;Expression&gt; -&gt; &lt;Term&gt; •, Add/CloseParen/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/NotEqualTo/Subtract]</text>
+			<text x="5" y="70">[&lt;Term&gt; -&gt; &lt;Term&gt; • &lt;FactorOp&gt; &lt;Factor&gt;, Add/CloseParen/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(1304,1509)">
+			<rect width="815" height="65" rx="20" />
+			<line x1="0" y1="25" x2="815" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">12</text>
+			<text x="5" y="40">[&lt;Factor&gt; -&gt; &lt;Value&gt; •, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="50">[&lt;Factor&gt; -&gt; &lt;Value&gt; • Power &lt;Value&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(1341,1106)">
+			<rect width="740" height="55" rx="20" />
+			<line x1="0" y1="25" x2="740" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">13</text>
+			<text x="5" y="40">[&lt;Term&gt; -&gt; &lt;Factor&gt; •, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(1329,1340)">
+			<rect width="765" height="55" rx="20" />
+			<line x1="0" y1="25" x2="765" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">14</text>
+			<text x="5" y="40">[&lt;Value&gt; -&gt; Number •, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+		</g>
+		<g transform="translate(1261,1688)">
+			<rect width="900" height="135" rx="20" />
+			<line x1="0" y1="25" x2="900" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">3</text>
+			<text x="5" y="40">[&lt;Expression&gt; -&gt; • &lt;Term&gt;, Add/CloseParen/Subtract]</text>
+			<text x="5" y="50">[&lt;Expression&gt; -&gt; • &lt;Expression&gt; &lt;TermOp&gt; &lt;Term&gt;, Add/CloseParen/Subtract]</text>
+			<text x="5" y="60">[&lt;Factor&gt; -&gt; • &lt;Value&gt;, Add/CloseParen/Divide/Multiply/Subtract]</text>
+			<text x="5" y="70">[&lt;Factor&gt; -&gt; • &lt;Value&gt; Power &lt;Value&gt;, Add/CloseParen/Divide/Multiply/Subtract]</text>
+			<text x="5" y="80">[&lt;Term&gt; -&gt; • &lt;Factor&gt;, Add/CloseParen/Divide/Multiply/Subtract]</text>
+			<text x="5" y="90">[&lt;Term&gt; -&gt; • &lt;Term&gt; &lt;FactorOp&gt; &lt;Factor&gt;, Add/CloseParen/Divide/Multiply/Subtract]</text>
+			<text x="5" y="100">[&lt;Value&gt; -&gt; • Number, Add/CloseParen/Divide/Multiply/Power/Subtract]</text>
+			<text x="5" y="110">[&lt;Value&gt; -&gt; • OpenParen &lt;Expression&gt; CloseParen, Add/CloseParen/Divide/Multiply/Power/Subtract]</text>
+			<text x="5" y="120">[&lt;Value&gt; -&gt; OpenParen • &lt;Expression&gt; CloseParen, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+		</g>
+		<g transform="translate(3108,675)">
+			<rect width="245" height="55" rx="20" />
+			<line x1="0" y1="25" x2="245" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">15</text>
+			<text x="5" y="40">[&lt;ComparisonOp&gt; -&gt; EqualTo •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3098,275)">
+			<rect width="265" height="55" rx="20" />
+			<line x1="0" y1="25" x2="265" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">16</text>
+			<text x="5" y="40">[&lt;ComparisonOp&gt; -&gt; GreaterThan •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3075,515)">
+			<rect width="310" height="55" rx="20" />
+			<line x1="0" y1="25" x2="310" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">17</text>
+			<text x="5" y="40">[&lt;ComparisonOp&gt; -&gt; GreaterThanOrEqualTo •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3105,435)">
+			<rect width="250" height="55" rx="20" />
+			<line x1="0" y1="25" x2="250" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">18</text>
+			<text x="5" y="40">[&lt;ComparisonOp&gt; -&gt; LessThan •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3083,815)">
+			<rect width="295" height="55" rx="20" />
+			<line x1="0" y1="25" x2="295" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">19</text>
+			<text x="5" y="40">[&lt;ComparisonOp&gt; -&gt; LessThanOrEqualTo •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3100,595)">
+			<rect width="260" height="55" rx="20" />
+			<line x1="0" y1="25" x2="260" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">20</text>
+			<text x="5" y="40">[&lt;ComparisonOp&gt; -&gt; NotEqualTo •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3133,355)">
+			<rect width="195" height="55" rx="20" />
+			<line x1="0" y1="25" x2="195" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">21</text>
+			<text x="5" y="40">[&lt;TermOp&gt; -&gt; Add •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3120,195)">
+			<rect width="220" height="55" rx="20" />
+			<line x1="0" y1="25" x2="220" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">22</text>
+			<text x="5" y="40">[&lt;TermOp&gt; -&gt; Subtract •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3005,950)">
+			<rect width="450" height="135" rx="20" />
+			<line x1="0" y1="25" x2="450" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">4</text>
+			<text x="5" y="40">[&lt;Expression&gt; -&gt; • &lt;Term&gt;, Add/EOF/Subtract]</text>
+			<text x="5" y="50">[&lt;Expression&gt; -&gt; • &lt;Expression&gt; &lt;TermOp&gt; &lt;Term&gt;, Add/EOF/Subtract]</text>
+			<text x="5" y="60">[&lt;Factor&gt; -&gt; • &lt;Value&gt;, Add/Divide/EOF/Multiply/Subtract]</text>
+			<text x="5" y="70">[&lt;Factor&gt; -&gt; • &lt;Value&gt; Power &lt;Value&gt;, Add/Divide/EOF/Multiply/Subtract]</text>
+			<text x="5" y="80">[&lt;Term&gt; -&gt; • &lt;Factor&gt;, Add/Divide/EOF/Multiply/Subtract]</text>
+			<text x="5" y="90">[&lt;Term&gt; -&gt; • &lt;Term&gt; &lt;FactorOp&gt; &lt;Factor&gt;, Add/Divide/EOF/Multiply/Subtract]</text>
+			<text x="5" y="100">[&lt;Value&gt; -&gt; • Number, Add/Divide/EOF/Multiply/Power/Subtract]</text>
+			<text x="5" y="110">[&lt;Value&gt; -&gt; • OpenParen &lt;Expression&gt; CloseParen, Add/Divide/EOF/Multiply/Power/Subtract]</text>
+			<text x="5" y="120">[&lt;Equation&gt; -&gt; &lt;Expression&gt; &lt;ComparisonOp&gt; • &lt;Expression&gt;, EOF]</text>
+		</g>
+		<g transform="translate(2780,1190)">
+			<rect width="900" height="115" rx="20" />
+			<line x1="0" y1="25" x2="900" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">5</text>
+			<text x="5" y="40">[&lt;Factor&gt; -&gt; • &lt;Value&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="50">[&lt;Factor&gt; -&gt; • &lt;Value&gt; Power &lt;Value&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="60">[&lt;Term&gt; -&gt; • &lt;Factor&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="70">[&lt;Term&gt; -&gt; • &lt;Term&gt; &lt;FactorOp&gt; &lt;Factor&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="80">[&lt;Value&gt; -&gt; • Number, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+			<text x="5" y="90">[&lt;Value&gt; -&gt; • OpenParen &lt;Expression&gt; CloseParen, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+			<text x="5" y="100">[&lt;Expression&gt; -&gt; &lt;Expression&gt; &lt;TermOp&gt; • &lt;Term&gt;, Add/CloseParen/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(3120,1330)">
+			<rect width="220" height="55" rx="20" />
+			<line x1="0" y1="25" x2="220" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">23</text>
+			<text x="5" y="40">[&lt;FactorOp&gt; -&gt; Divide •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(3115,1110)">
+			<rect width="230" height="55" rx="20" />
+			<line x1="0" y1="25" x2="230" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">24</text>
+			<text x="5" y="40">[&lt;FactorOp&gt; -&gt; Multiply •, Number/OpenParen]</text>
+		</g>
+		<g transform="translate(2780,1535)">
+			<rect width="900" height="95" rx="20" />
+			<line x1="0" y1="25" x2="900" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">6</text>
+			<text x="5" y="40">[&lt;Factor&gt; -&gt; • &lt;Value&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="50">[&lt;Factor&gt; -&gt; • &lt;Value&gt; Power &lt;Value&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="60">[&lt;Value&gt; -&gt; • Number, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+			<text x="5" y="70">[&lt;Value&gt; -&gt; • OpenParen &lt;Expression&gt; CloseParen, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+			<text x="5" y="80">[&lt;Term&gt; -&gt; &lt;Term&gt; &lt;FactorOp&gt; • &lt;Factor&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(2795,1655)">
+			<rect width="870" height="75" rx="20" />
+			<line x1="0" y1="25" x2="870" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">7</text>
+			<text x="5" y="40">[&lt;Value&gt; -&gt; • Number, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="50">[&lt;Value&gt; -&gt; • OpenParen &lt;Expression&gt; CloseParen, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+			<text x="5" y="60">[&lt;Factor&gt; -&gt; &lt;Value&gt; Power • &lt;Value&gt;, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(2840,1755)">
+			<rect width="780" height="85" rx="20" />
+			<line x1="0" y1="25" x2="780" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">8</text>
+			<text x="5" y="40">[&lt;TermOp&gt; -&gt; • Add, Number/OpenParen]</text>
+			<text x="5" y="50">[&lt;TermOp&gt; -&gt; • Subtract, Number/OpenParen]</text>
+			<text x="5" y="60">[&lt;Expression&gt; -&gt; &lt;Expression&gt; • &lt;TermOp&gt; &lt;Term&gt;]</text>
+			<text x="5" y="70">[&lt;Value&gt; -&gt; OpenParen &lt;Expression&gt; • CloseParen, Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power]</text>
+		</g>
+		<g transform="translate(4348,673)">
+			<rect width="325" height="85" rx="20" />
+			<line x1="0" y1="25" x2="325" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">9</text>
+			<text x="5" y="40">[&lt;TermOp&gt; -&gt; • Add, Number/OpenParen]</text>
+			<text x="5" y="50">[&lt;TermOp&gt; -&gt; • Subtract, Number/OpenParen]</text>
+			<text x="5" y="60">[&lt;Expression&gt; -&gt; &lt;Expression&gt; • &lt;TermOp&gt; &lt;Term&gt;, EOF]</text>
+			<text x="5" y="70">[&lt;Equation&gt; -&gt; &lt;Expression&gt; &lt;ComparisonOp&gt; &lt;Expression&gt; •, EOF]</text>
+		</g>
+		<g transform="translate(4115,1287)">
+			<rect width="790" height="85" rx="20" />
+			<line x1="0" y1="25" x2="790" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">10</text>
+			<text x="5" y="40">[&lt;FactorOp&gt; -&gt; • Divide, Number/OpenParen]</text>
+			<text x="5" y="50">[&lt;FactorOp&gt; -&gt; • Multiply, Number/OpenParen]</text>
+			<text x="5" y="60">[&lt;Term&gt; -&gt; &lt;Term&gt; • &lt;FactorOp&gt; &lt;Factor&gt;, Add/CloseParen/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/NotEqualTo/Subtract]</text>
+			<text x="5" y="70">[&lt;Expression&gt; -&gt; &lt;Expression&gt; &lt;TermOp&gt; &lt;Term&gt; •, Add/CloseParen/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(4095,1554)">
+			<rect width="830" height="55" rx="20" />
+			<line x1="0" y1="25" x2="830" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">25</text>
+			<text x="5" y="40">[&lt;Term&gt; -&gt; &lt;Term&gt; &lt;FactorOp&gt; &lt;Factor&gt; •, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(4103,1664)">
+			<rect width="815" height="55" rx="20" />
+			<line x1="0" y1="25" x2="815" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">26</text>
+			<text x="5" y="40">[&lt;Factor&gt; -&gt; &lt;Value&gt; Power &lt;Value&gt; •, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Subtract]</text>
+		</g>
+		<g transform="translate(4060,1769)">
+			<rect width="900" height="55" rx="20" />
+			<line x1="0" y1="25" x2="900" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">27</text>
+			<text x="5" y="40">[&lt;Value&gt; -&gt; OpenParen &lt;Expression&gt; CloseParen •, Add/CloseParen/Divide/EOF/EqualTo/GreaterThan/GreaterThanOrEqualTo/LessThan/LessThanOrEqualTo/Multiply/NotEqualTo/Power/Subtract]</text>
+		</g>
+		<g transform="translate(1013,852)">
+			<rect width="60" height="20" />
+			<text x="5" y="15">&lt;Equation&gt;</text>
+		</g>
+		<g transform="translate(1008,914)">
+			<rect width="70" height="20" />
+			<text x="5" y="15">&lt;Expression&gt;</text>
+		</g>
+		<g transform="translate(1023,1192)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">&lt;Term&gt;</text>
+		</g>
+		<g transform="translate(1021,1348)">
+			<rect width="45" height="20" />
+			<text x="5" y="15">&lt;Value&gt;</text>
+		</g>
+		<g transform="translate(1018,1144)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;Factor&gt;</text>
+		</g>
+		<g transform="translate(1023,1261)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Number</text>
+		</g>
+		<g transform="translate(1016,1455)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">OpenParen</text>
+		</g>
+		<g transform="translate(2375,682)">
+			<rect width="45" height="20" />
+			<text x="5" y="15">EqualTo</text>
+		</g>
+		<g transform="translate(2365,457)">
+			<rect width="65" height="20" />
+			<text x="5" y="15">GreaterThan</text>
+		</g>
+		<g transform="translate(2342,592)">
+			<rect width="110" height="20" />
+			<text x="5" y="15">GreaterThanOrEqualTo</text>
+		</g>
+		<g transform="translate(2372,547)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">LessThan</text>
+		</g>
+		<g transform="translate(2350,747)">
+			<rect width="95" height="20" />
+			<text x="5" y="15">LessThanOrEqualTo</text>
+		</g>
+		<g transform="translate(2367,637)">
+			<rect width="60" height="20" />
+			<text x="5" y="15">NotEqualTo</text>
+		</g>
+		<g transform="translate(2385,502)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">Add</text>
+		</g>
+		<g transform="translate(2372,412)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">Subtract</text>
+		</g>
+		<g transform="translate(2357,835)">
+			<rect width="80" height="20" />
+			<text x="5" y="15">&lt;ComparisonOp&gt;</text>
+		</g>
+		<g transform="translate(2372,972)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;TermOp&gt;</text>
+		</g>
+		<g transform="translate(2377,1282)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Divide</text>
+		</g>
+		<g transform="translate(2372,1142)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">Multiply</text>
+		</g>
+		<g transform="translate(2367,1392)">
+			<rect width="60" height="20" />
+			<text x="5" y="15">&lt;FactorOp&gt;</text>
+		</g>
+		<g transform="translate(2380,1842)">
+			<rect width="35" height="20" />
+			<text x="5" y="15">Power</text>
+		</g>
+		<g transform="translate(2362,1932)">
+			<rect width="70" height="20" />
+			<text x="5" y="15">&lt;Expression&gt;</text>
+		</g>
+		<g transform="translate(1691,1419)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">&lt;Term&gt;</text>
+		</g>
+		<g transform="translate(1689,1598)">
+			<rect width="45" height="20" />
+			<text x="5" y="15">&lt;Value&gt;</text>
+		</g>
+		<g transform="translate(1686,1295)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;Factor&gt;</text>
+		</g>
+		<g transform="translate(1691,1464)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Number</text>
+		</g>
+		<g transform="translate(1684,1643)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">OpenParen</text>
+		</g>
+		<g transform="translate(2377,927)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">&lt;Term&gt;</text>
+		</g>
+		<g transform="translate(3835,856)">
+			<rect width="70" height="20" />
+			<text x="5" y="15">&lt;Expression&gt;</text>
+		</g>
+		<g transform="translate(2375,1437)">
+			<rect width="45" height="20" />
+			<text x="5" y="15">&lt;Value&gt;</text>
+		</g>
+		<g transform="translate(2372,882)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;Factor&gt;</text>
+		</g>
+		<g transform="translate(2377,1327)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Number</text>
+		</g>
+		<g transform="translate(2370,1572)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">OpenParen</text>
+		</g>
+		<g transform="translate(2375,1527)">
+			<rect width="45" height="20" />
+			<text x="5" y="15">&lt;Value&gt;</text>
+		</g>
+		<g transform="translate(2372,1187)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;Factor&gt;</text>
+		</g>
+		<g transform="translate(3850,1278)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">&lt;Term&gt;</text>
+		</g>
+		<g transform="translate(2377,1482)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Number</text>
+		</g>
+		<g transform="translate(2370,1752)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">OpenParen</text>
+		</g>
+		<g transform="translate(2375,1707)">
+			<rect width="45" height="20" />
+			<text x="5" y="15">&lt;Value&gt;</text>
+		</g>
+		<g transform="translate(2377,1617)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Number</text>
+		</g>
+		<g transform="translate(2370,1797)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">OpenParen</text>
+		</g>
+		<g transform="translate(3845,1571)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;Factor&gt;</text>
+		</g>
+		<g transform="translate(2377,1662)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Number</text>
+		</g>
+		<g transform="translate(2370,1887)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">OpenParen</text>
+		</g>
+		<g transform="translate(3848,1681)">
+			<rect width="45" height="20" />
+			<text x="5" y="15">&lt;Value&gt;</text>
+		</g>
+		<g transform="translate(3840,1786)">
+			<rect width="60" height="20" />
+			<text x="5" y="15">CloseParen</text>
+		</g>
+		<g transform="translate(3218,905)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">Add</text>
+		</g>
+		<g transform="translate(3205,770)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">Subtract</text>
+		</g>
+		<g transform="translate(3205,1490)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;TermOp&gt;</text>
+		</g>
+		<g transform="translate(3858,538)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">Add</text>
+		</g>
+		<g transform="translate(3845,458)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">Subtract</text>
+		</g>
+		<g transform="translate(3845,971)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">&lt;TermOp&gt;</text>
+		</g>
+		<g transform="translate(3850,1333)">
+			<rect width="40" height="20" />
+			<text x="5" y="15">Divide</text>
+		</g>
+		<g transform="translate(3845,1223)">
+			<rect width="50" height="20" />
+			<text x="5" y="15">Multiply</text>
+		</g>
+		<g transform="translate(3840,1445)">
+			<rect width="60" height="20" />
+			<text x="5" y="15">&lt;FactorOp&gt;</text>
+		</g>
+	</g>
+</svg>

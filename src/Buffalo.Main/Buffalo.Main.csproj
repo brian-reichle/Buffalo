@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCBB1530-99AB-4920-8671-FC2C49B08A77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Buffalo.Main</RootNamespace>
+    <AssemblyName>Buffalo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Themes\IconKeys.cs" />
+    <Page Include="Controls\MainForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\NewFileDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\NotificationsGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ProcessDurationGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PageViews\CodePageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PageViews\ConfigPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adorners\Squiggle.cs" />
+    <Compile Include="Adorners\SquiggleAdorner.cs" />
+    <Compile Include="Controls\NewFileDialog.xaml.cs">
+      <DependentUpon>NewFileDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PageViews\CodePageView.xaml.cs">
+      <DependentUpon>CodePageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PageViews\ConfigPageView.xaml.cs">
+      <DependentUpon>ConfigPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PageViews\PageTemplateSelector.cs" />
+    <Compile Include="Controls\PageViews\DataTemplateCollection.cs" />
+    <Compile Include="Converters\TimeSpanConverter.cs" />
+    <Compile Include="Converters\EnumBoolConverter.cs" />
+    <Compile Include="Data\IConfigPageProvider.cs" />
+    <Compile Include="Data\NewFileManager.cs" />
+    <Compile Include="Data\NotificationCollection.cs" />
+    <Compile Include="Data\Pages\CodePage.cs" />
+    <Compile Include="Data\Pages\ConfigPage.cs" />
+    <Compile Include="Data\Pages\ResultPage.cs" />
+    <Compile Include="Data\Pages\Page.cs" />
+    <Compile Include="Data\ProcessDuration.cs" />
+    <Compile Include="Data\GenerationManager.cs" />
+    <Compile Include="Data\GeneratorLauncher.cs" />
+    <Compile Include="Data\Notification.cs" />
+    <Compile Include="Data\Range.cs" />
+    <Compile Include="Data\RangeMap.cs" />
+    <Compile Include="Data\ResultTokens\CodeResultToken.cs" />
+    <Compile Include="Data\ResultTokens\IResultToken.cs" />
+    <Compile Include="Data\ResultTokens\ResultToken.cs" />
+    <Compile Include="Events\NotificationEventArgs.cs" />
+    <Compile Include="HelperClasses\ConfigAutoChecker.cs" />
+    <Compile Include="HelperClasses\Environment.cs" />
+    <Compile Include="HelperClasses\FileDialogHelper.cs" />
+    <Compile Include="Controls\MainForm.xaml.cs">
+      <DependentUpon>MainForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NotificationsGrid.xaml.cs">
+      <DependentUpon>NotificationsGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProcessDurationGrid.xaml.cs">
+      <DependentUpon>ProcessDurationGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\FocusHelper.cs" />
+    <Compile Include="HelperClasses\HexStream.cs" />
+    <Compile Include="HelperClasses\ManagerFileOperations.cs" />
+    <Compile Include="HelperClasses\NullEnvironment.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\Templates.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Buffalo.Core\Buffalo.Core.csproj">
+      <Project>{EC78D823-AD6A-4FA3-A968-EFF73D657D6E}</Project>
+      <Name>Buffalo.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\LexerTemplate.l" />
+    <EmbeddedResource Include="Templates\ParserTemplate.y" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers">
+      <Version>2.9.8</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers">
+      <Version>1.1.118</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="WpfAnalyzers">
+      <Version>2.4.4</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="WTG.Analyzers">
+      <Version>2.0.7</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,72 @@
+<!-- Copyright (c) Brian Reichle.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information. -->
+<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:Buffalo.Main"
+	>
+	<DrawingImage x:Key="{x:Static local:IconKeys.CloseKey}">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<GeometryDrawing Brush="DarkGray">
+					<GeometryDrawing.Geometry>
+						<EllipseGeometry Center="7,7" RadiusX="7" RadiusY="7" />
+					</GeometryDrawing.Geometry>
+				</GeometryDrawing>
+				<GeometryDrawing Brush="Black" Geometry="M3,3 h1 l3,3 l3-3 h1 v1 l-3,3 l3,3 v1 h-1 l-3,-3 l-3,3 h-1 v-1 l3,-3 l-3,-3 z" />
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+
+	<DrawingImage x:Key="{x:Static local:IconKeys.GenerateKey}">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<GeometryDrawing Brush="Transparent" Geometry="M0,0h16v16z" />
+				<GeometryDrawing Brush="Black" Geometry="M1,1h14v14h-14z" />
+				<GeometryDrawing Brush="White" Geometry="M2,2h12v12h-12z M6,2h2v2h1v-2h2v2h1v1h-1v2h-1v2h1v1h-1v2h-2v-2h-1v2h-2v-2h-1v-1h1v-2h1v-2h-1v-1h1z M8,5h1v2h-1v2h-1v-2h1z" />
+
+				<DrawingGroup.OpacityMask>
+					<LinearGradientBrush SpreadMethod="Pad" StartPoint="0,0" EndPoint="0,1">
+						<LinearGradientBrush.GradientStops>
+							<GradientStop Color="Transparent" Offset="0" />
+							<GradientStop Color="White" Offset="0.8" />
+						</LinearGradientBrush.GradientStops>
+					</LinearGradientBrush>
+				</DrawingGroup.OpacityMask>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+
+	<DrawingImage x:Key="{x:Static local:IconKeys.NewKey}">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<GeometryDrawing Brush="Transparent" Geometry="M0,0h16v16z" />
+				<GeometryDrawing Brush="Black" Geometry="M3,2h7l3,3v10h-10z" />
+				<GeometryDrawing Brush="White" Geometry="M4,3h5v3h3v8h-8z M10,3l2,2h-2" />
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+
+	<DrawingImage x:Key="{x:Static local:IconKeys.LoadKey}">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<GeometryDrawing Brush="Transparent" Geometry="M0,0h16v16z" />
+				<GeometryDrawing Brush="Black" Geometry="M1,3l1,-1h4l1,1h6v3h2l-3,8h-11z" />
+				<GeometryDrawing Brush="Goldenrod" Geometry="M2,10.75v-6.75l1,-1h2l1,1h6v2h-8.5" />
+				<GeometryDrawing Brush="Yellow" Geometry="M2,13l2,-6h9.5l-2,6" />
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+
+	<DrawingImage x:Key="{x:Static local:IconKeys.SaveKey}">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<GeometryDrawing Brush="Transparent" Geometry="M0,0h16v16z" />
+				<GeometryDrawing Brush="Black" Geometry="M0,4h12v12h-11l-1,-1z" />
+				<GeometryDrawing Brush="Brown" Geometry="M2,4h8v2h-8z" />
+				<GeometryDrawing Brush="Wheat" Geometry="M2,6h8v4h-8z" />
+				<GeometryDrawing Brush="Gray" Geometry="M2,12h8v4h-8z M3,13h2v2h-2z" />
+				<GeometryDrawing Brush="Blue" Geometry="M12,0v4h4l-2,-1a2,3,1,0,0,1,-3a2,3,1,0,1,-2,2z" />
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+</ResourceDictionary>

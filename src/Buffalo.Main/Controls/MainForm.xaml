@@ -1,0 +1,138 @@
+<!-- Copyright (c) Brian Reichle.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information. -->
+<Window
+	x:ClassModifier="internal"
+	x:Class="Buffalo.Main.MainForm"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:Buffalo.Main"
+	Height="500" Width="700"
+	Title="Buffalo"
+	mc:Ignorable="d"
+	d:DataContext="{d:DesignInstance {x:Type local:GenerationManager}}"
+	>
+
+	<Window.Resources>
+		<local:PageTemplateSelector x:Key="pageBodySelector">
+			<DataTemplate DataType="{x:Type local:ConfigPage}">
+				<local:ConfigPageView x:Name="View" />
+			</DataTemplate>
+			<DataTemplate DataType="{x:Type local:CodePage}">
+				<local:CodePageView x:Name="View" />
+			</DataTemplate>
+		</local:PageTemplateSelector>
+
+		<local:PageTemplateSelector x:Key="pageHeaderSelector">
+			<DataTemplate DataType="{x:Type local:ConfigPage}">
+				<DockPanel>
+					<Button DockPanel.Dock="Right" Margin="5,0,0,0" Command="{x:Static local:MainForm.ClosePage}" CommandParameter="{Binding}" Style="{StaticResource CloseTabButton}" />
+					<TextBlock VerticalAlignment="Center" Text="{Binding Path=FileName}" />
+				</DockPanel>
+			</DataTemplate>
+			<DataTemplate DataType="{x:Type local:CodePage}">
+				<DockPanel>
+					<Button DockPanel.Dock="Right" Margin="5,0,0,0" Command="{x:Static local:MainForm.ClosePage}" CommandParameter="{Binding}" Style="{StaticResource CloseTabButton}" />
+					<TextBlock VerticalAlignment="Center">Out:</TextBlock>
+					<TextBlock VerticalAlignment="Center" Text="{Binding Path=FileName}" />
+				</DockPanel>
+			</DataTemplate>
+		</local:PageTemplateSelector>
+	</Window.Resources>
+
+	<Window.InputBindings>
+		<KeyBinding Key="F5" Command="{x:Static local:MainForm.Generate}" CommandParameter="{Binding CurrentPage}" />
+		<KeyBinding Key="S" Modifiers="Ctrl" Command="ApplicationCommands.Save" />
+		<KeyBinding Key="O" Modifiers="Ctrl" Command="ApplicationCommands.Open" />
+		<KeyBinding Key="N" Modifiers="Ctrl" Command="ApplicationCommands.New" />
+		<KeyBinding Key="F4" Modifiers="Ctrl" Command="ApplicationCommands.Close" />
+		<KeyBinding Key="Enter" Modifiers="Alt" Command="{x:Static local:MainForm.ToggleMaximise}" />
+		<KeyBinding Key="Esc" Command="{x:Static local:MainForm.FocusOnCurrent}" />
+	</Window.InputBindings>
+
+	<Window.CommandBindings>
+		<CommandBinding Command="{x:Static local:MainForm.ToggleMaximise}" Executed="OnToggleMaximiseExecuted" />
+		<CommandBinding Command="{x:Static local:MainForm.FocusOnCurrent}" Executed="OnFocusOnCurrentExecuted" />
+		<CommandBinding Command="{x:Static local:MainForm.ClosePage}" Executed="OnClosePageExecuted" />
+		<CommandBinding Command="{x:Static local:MainForm.Generate}" Executed="OnGenerateExecuted" />
+		<CommandBinding Command="ApplicationCommands.Save" Executed="OnSaveFileExecuted" />
+		<CommandBinding Command="ApplicationCommands.Open" Executed="OnOpenFileExecuted" />
+		<CommandBinding Command="ApplicationCommands.New" Executed="OnNewFileExecuted" />
+		<CommandBinding Command="ApplicationCommands.Close" Executed="OnCloseFileExecuted" />
+	</Window.CommandBindings>
+
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="File">
+				<MenuItem Header="New" Command="ApplicationCommands.New" />
+				<MenuItem Header="Open" Command="ApplicationCommands.Open" />
+				<MenuItem Header="Save" Command="ApplicationCommands.Save" />
+				<MenuItem Header="Close" Command="ApplicationCommands.Close" />
+				<Separator />
+				<MenuItem Header="Exit" Click="ExitMenu_Click" />
+			</MenuItem>
+		</Menu>
+		<ToolBarTray DockPanel.Dock="Top">
+			<ToolBar Band="0" BandIndex="0">
+				<Button Command="ApplicationCommands.New">
+					<Image Source="{StaticResource {x:Static local:IconKeys.NewKey}}" />
+				</Button>
+				<Button Command="ApplicationCommands.Open">
+					<Image Source="{StaticResource {x:Static local:IconKeys.LoadKey}}" />
+				</Button>
+				<Button Command="ApplicationCommands.Save">
+					<Image Source="{StaticResource {x:Static local:IconKeys.SaveKey}}" />
+				</Button>
+			</ToolBar>
+			<ToolBar Band="0" BandIndex="1">
+				<Button Command="{x:Static local:MainForm.Generate}" CommandParameter="{Binding CurrentPage}">
+					<Image Source="{StaticResource ResourceKey={x:Static local:IconKeys.GenerateKey}}" />
+				</Button>
+			</ToolBar>
+		</ToolBarTray>
+		<StatusBar DockPanel.Dock="Bottom">
+			<Label>Time Taken:</Label>
+			<Label Content="{Binding Path=TimeTaken, Converter={StaticResource timespanConverter}}" />
+			<Label>
+				<Label.Style>
+					<Style TargetType="{x:Type Label}">
+						<Style.Triggers>
+							<DataTrigger Binding="{Binding Path=IsGenerating}" Value="true">
+								<Setter Property="Content" Value="Generating" />
+							</DataTrigger>
+						</Style.Triggers>
+					</Style>
+				</Label.Style>
+			</Label>
+		</StatusBar>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="6*" />
+				<RowDefinition Height="3" />
+				<RowDefinition Height="3*" />
+			</Grid.RowDefinitions>
+
+			<TabControl
+				Name="tabControl"
+				Grid.Row="0"
+				ItemsSource="{Binding Pages}"
+				SelectedValue="{Binding CurrentPage}"
+				ContentTemplateSelector="{StaticResource pageBodySelector}"
+				ItemTemplateSelector="{StaticResource pageHeaderSelector}" />
+
+			<GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" ResizeDirection="Auto" />
+
+			<TabControl Grid.Row="2">
+				<TabItem Header="Error List">
+					<local:NotificationsGrid
+						x:Name="notificationsGrid"
+						DataContext="{Binding Notifications}"
+						GotoNotification="NotificationsGrid_GotoNotification" />
+				</TabItem>
+				<TabItem Header="Performance">
+					<local:ProcessDurationGrid DataContext="{Binding ProcessDurations}" />
+				</TabItem>
+			</TabControl>
+		</Grid>
+	</DockPanel>
+</Window>

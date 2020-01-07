@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F1269FD-E465-4AA1-8484-4EA77BED3868}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Buffalo.Core.Test</RootNamespace>
+    <AssemblyName>Buffalo.Core.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\CharEscapeHelperTest.cs" />
+    <Compile Include="Common\CompressedBlobTest.cs" />
+    <Compile Include="Common\ConfigSettingListTest.cs" />
+    <Compile Include="Common\BoolConfigSettingTest.cs" />
+    <Compile Include="Common\FAGraphTest.cs" />
+    <Compile Include="TestHelpers\FARenderer.2.cs" />
+    <Compile Include="TestHelpers\FARenderer.cs" />
+    <Compile Include="Common\LabelConfigSettingTest.cs" />
+    <Compile Include="Common\ElementSizeStrategyTest.cs" />
+    <Compile Include="Common\EnumConfigSettingTest.cs" />
+    <Compile Include="Common\OrderedSetTest.cs" />
+    <Compile Include="Common\PerfReporterHelperTest.cs" />
+    <Compile Include="Common\ReadOnlyIndexedCollectionTest.cs" />
+    <Compile Include="Common\ReporterWrapperTest.cs" />
+    <Compile Include="Common\StringConfigSettingTest.cs" />
+    <Compile Include="Common\TableFragmentTest.cs" />
+    <Compile Include="Lexer\Configuration\ConfigManagerTest.cs" />
+    <Compile Include="Lexer\Configuration\ConfigScannerTest.cs" />
+    <Compile Include="Lexer\LexerGeneratorTest.cs" />
+    <Compile Include="Lexer\LexerFactory.cs" />
+    <Compile Include="Lexer\RegularExpression\ReUtils.cs" />
+    <Compile Include="Lexer\TokenFilterDelegate.cs" />
+    <Compile Include="Lexer\ScanGraph\CharSetTest.cs" />
+    <Compile Include="Lexer\RegularExpression\Element\ReConcatenationTest.cs" />
+    <Compile Include="Lexer\RegularExpression\Element\ReEmptyLanguageTest.cs" />
+    <Compile Include="Lexer\RegularExpression\Element\ReEmptyStringTest.cs" />
+    <Compile Include="Lexer\RegularExpression\Element\ReFactoryTest.cs" />
+    <Compile Include="Lexer\RegularExpression\Element\ReKleeneStarTest.cs" />
+    <Compile Include="Lexer\RegularExpression\Element\ReSingletonTest.cs" />
+    <Compile Include="Lexer\RegularExpression\Element\ReUnionTest.cs" />
+    <Compile Include="Lexer\RegularExpression\ReParserTest.cs" />
+    <Compile Include="Lexer\ScanGraph\FAToolsTest.cs" />
+    <Compile Include="Lexer\Generation\GenNotificationsTest.cs" />
+    <Compile Include="Parser\Generation\Base\AutoParserBase.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserBase.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\ElementSize\AutoParserByte.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserByte.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\ElementSize\AutoParserInt.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserInt.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\ElementSize\AutoParserShort.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserShort.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Flags\AutoParserTrace.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserTrace.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Configuration\ConfigManagerTest.cs" />
+    <Compile Include="Parser\Configuration\ConfigScannerTest.cs" />
+    <Compile Include="Parser\IParser.cs" />
+    <Compile Include="Parser\ParseGraph\ParseGraphTest.cs" />
+    <Compile Include="Parser\ParseGraph\ParseItemSetTest.cs" />
+    <Compile Include="Parser\ParseGraph\ParseItemTest.cs" />
+    <Compile Include="Parser\ParseGraph\ProductionTest.cs" />
+    <Compile Include="Parser\ParseGraph\SegmentSetProviderTest.cs" />
+    <Compile Include="Parser\ParseGraph\SegmentSetTest.cs" />
+    <Compile Include="Parser\ParseGraph\SegmentTest.cs" />
+    <Compile Include="Parser\ParserFactory.cs" />
+    <Compile Include="Parser\ParserGeneratorTest.cs" />
+    <Compile Include="Parser\Generation\SpecificationTest.cs" />
+    <Compile Include="Parser\ReductionDelegate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestHelpers\CharPosX.cs" />
+    <Compile Include="TestHelpers\FileConstraint.cs" />
+    <Compile Include="TestHelpers\GeneratorRunner.cs" />
+    <Compile Include="TestHelpers\GraphProvider.Lexer.cs" />
+    <Compile Include="TestHelpers\GraphProvider.Parser.cs" />
+    <Compile Include="TestHelpers\ILHelper.cs" />
+    <Compile Include="TestHelpers\NFAHelper.cs" />
+    <Compile Include="TestHelpers\NFASegment.cs" />
+    <Compile Include="TestHelpers\Renderer.cs" />
+    <Compile Include="TestHelpers\Renderer.Lexer.cs" />
+    <Compile Include="TestHelpers\Renderer.Parser.cs" />
+    <Compile Include="TestHelpers\Token.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Buffalo.TestResources\Buffalo.TestResources.csproj">
+      <Project>{5D34EE02-9E6C-4396-AAEF-E19823ED9438}</Project>
+      <Name>Buffalo.TestResources</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Buffalo.Core\Buffalo.Core.csproj">
+      <Project>{EC78D823-AD6A-4FA3-A968-EFF73D657D6E}</Project>
+      <Name>Buffalo.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Parser\Generation\Base\AutoParserBase.table">
+      <DependentUpon>AutoParserBase.y</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\Base\Base.0.table">
+      <DependentUpon>Base.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Base\Base.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>Base.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\ElementSize\Byte.0.table">
+      <DependentUpon>Byte.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\ElementSize\Byte.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>Byte.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\ElementSize\Int.0.table">
+      <DependentUpon>Int.l</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\ElementSize\Short.0.table">
+      <DependentUpon>Short.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\ElementSize\Short.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>Short.g.cs</LastGenOutput>
+    </None>
+    <None Include="Lexer\Generation\ElementSize\Int.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>Int.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\Flags\CacheTables.0.table">
+      <DependentUpon>CacheTables.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Flags\CacheTables.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>CacheTables.g.cs</LastGenOutput>
+    </None>
+    <None Include="Lexer\Generation\Flags\SuppressEmbedding.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>SuppressEmbedding.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\TableCompression\CTB.0.table">
+      <DependentUpon>CTB.l</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\TableCompression\None.0.table">
+      <DependentUpon>None.l</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\TableCompression\Simple.0.table">
+      <DependentUpon>Simple.l</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\Multi\MultiTable.0.table">
+      <DependentUpon>MultiTable.l</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\Multi\MultiTable.1.table">
+      <DependentUpon>MultiTable.l</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\Multi\CacheMultiEntry.0.table">
+      <DependentUpon>CacheMultiEntry.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Multi\CacheMultiEntry.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>CacheMultiEntry.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\Multi\CacheMultiTable.0.table">
+      <DependentUpon>CacheMultiTable.l</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lexer\Generation\Multi\CacheMultiTable.1.table">
+      <DependentUpon>CacheMultiTable.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Multi\CacheMultiTable.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>CacheMultiTable.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\Multi\MultiEntry.0.table">
+      <DependentUpon>MultiEntry.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Multi\MultiEntry.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>MultiEntry.g.cs</LastGenOutput>
+    </None>
+    <None Include="Lexer\Generation\Multi\MultiTable.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>MultiTable.g.cs</LastGenOutput>
+    </None>
+    <None Include="Lexer\Generation\TableCompression\Simple.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>Simple.g.cs</LastGenOutput>
+    </None>
+    <None Include="Lexer\Generation\TableCompression\CTB.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>CTB.g.cs</LastGenOutput>
+    </None>
+    <None Include="Lexer\Generation\TableCompression\None.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>None.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\Visibility\Internal.0.table">
+      <DependentUpon>Internal.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Visibility\Internal.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>Internal.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Lexer\Generation\Visibility\Public.0.table">
+      <DependentUpon>Public.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Visibility\Public.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>Public.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Base\AutoParserBase.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserBase.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\ElementSize\AutoParserByte.table">
+      <DependentUpon>AutoParserByte.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\ElementSize\AutoParserByte.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserByte.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\ElementSize\AutoParserInt.table">
+      <DependentUpon>AutoParserInt.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\ElementSize\AutoParserInt.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserInt.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\ElementSize\AutoParserShort.table">
+      <DependentUpon>AutoParserShort.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\ElementSize\AutoParserShort.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserShort.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Flags\AutoParserShowTable.table">
+      <DependentUpon>AutoParserShowTable.y</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parser\Generation\Flags\AutoParserCacheTables.table">
+      <DependentUpon>AutoParserCacheTables.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Flags\AutoParserCacheTables.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserCacheTables.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Flags\AutoParserShowTable.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserShowTable.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Flags\AutoParserSuppressEmbedding.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserSuppressEmbedding.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Flags\AutoParserTrace.table">
+      <DependentUpon>AutoParserTrace.y</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Common\BitOperationsTest.cs" />
+    <Compile Include="Lexer\Generation\Base\Base.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Base.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\CommonLexerTest.cs" />
+    <Compile Include="Lexer\Generation\CommonSingleLexerTest.cs" />
+    <Compile Include="Lexer\Generation\CommonMultiLexerTest.cs" />
+    <Compile Include="Lexer\Generation\ElementSize\Byte.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Byte.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\ElementSize\Short.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Short.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\ElementSize\Int.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Int.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Flags\CacheTables.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CacheTables.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Flags\RenderGraph.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RenderGraph.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Flags\SuppressEmbedding.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuppressEmbedding.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Multi\CacheMultiEntry.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CacheMultiEntry.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Multi\CacheMultiTable.g.cs">
+      <SubType>Code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CacheMultiTable.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Multi\MultiEntry.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiEntry.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Multi\MultiTable.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiTable.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\TableCompression\Simple.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Simple.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\TableCompression\CTB.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CTB.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\TableCompression\None.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>None.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Visibility\Internal.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Internal.l</DependentUpon>
+    </Compile>
+    <Compile Include="Lexer\Generation\Visibility\Public.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Public.l</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\CommonParserTest.cs" />
+    <Compile Include="Parser\Generation\Flags\AutoParserCacheTables.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserCacheTables.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Flags\AutoParserShowTable.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserShowTable.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Flags\AutoParserSuppressEmbedding.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserSuppressEmbedding.y</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Parser\Generation\Flags\AutoParserSVG.table">
+      <DependentUpon>AutoParserSVG.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Flags\AutoParserSVG.svg">
+      <DependentUpon>AutoParserSVG.y</DependentUpon>
+    </None>
+    <None Include="Parser\Generation\Flags\AutoParserTrace.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserTrace.g.cs</LastGenOutput>
+    </None>
+    <Compile Include="Parser\Generation\Flags\AutoParserSVG.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserSVG.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserMergeNonTerminals.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserMergeNonTerminals.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserErrorWithoutEOF.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserErrorWithoutEOF.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserGotoOnlyStates.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserGotoOnlyStates.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserMultipleEntry.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserMultipleEntry.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserReductionDuringError.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserReductionDuringError.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserShiftReduceConflict.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserShiftReduceConflict.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserOptionalSegments.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserOptionalSegments.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserIgnoredSegments.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserIgnoredSegments.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserMerge.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserMerge.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\AutoParserNoMerge.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserNoMerge.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Gramour\GramourParserTest.cs" />
+    <Compile Include="Parser\Generation\TableCompression\AutoParserCTB.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserCTB.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\TableCompression\AutoParserNone.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserNone.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\TableCompression\AutoParserSimple.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserSimple.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\TypeHandling\AutoParserCast.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserCast.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\TypeHandling\AutoParserField.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserField.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Visibility\AutoParserInternal.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserInternal.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Visibility\AutoParserPublic.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserPublic.y</DependentUpon>
+    </Compile>
+    <Compile Include="Parser\Generation\Visibility\AutoParserTypeVisibility.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoParserTypeVisibility.y</DependentUpon>
+    </Compile>
+    <Compile Include="SelfChecks\FileTextConstraintTest.cs" />
+    <Compile Include="SelfChecks\FileBinaryConstraintTest.cs" />
+    <Compile Include="TestHelpers\ConstraintError.cs" />
+    <Compile Include="TestHelpers\FileTextConstraint.cs" />
+    <Compile Include="TestHelpers\MismatchConstraintError.cs" />
+    <Compile Include="TestHelpers\SimpleConstraintError.cs" />
+    <Compile Include="TestHelpers\FileBinaryConstraint.cs" />
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserErrorWithoutEOF.table">
+      <DependentUpon>AutoParserErrorWithoutEOF.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Flags\AutoParserSVG.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserSVG.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Gramour\AutoParserErrorWithoutEOF.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserErrorWithoutEOF.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserGotoOnlyStates.table">
+      <DependentUpon>AutoParserGotoOnlyStates.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Gramour\AutoParserGotoOnlyStates.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserGotoOnlyStates.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserMultipleEntry.table">
+      <DependentUpon>AutoParserMultipleEntry.y</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserMerge.table">
+      <DependentUpon>AutoParserMerge.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Gramour\AutoParserMultipleEntry.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserMultipleEntry.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserReductionDuringError.table">
+      <DependentUpon>AutoParserReductionDuringError.y</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserOptionalSegments.table">
+      <DependentUpon>AutoParserOptionalSegments.y</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserNoMerge.table">
+      <DependentUpon>AutoParserNoMerge.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Gramour\AutoParserReductionDuringError.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserReductionDuringError.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserShiftReduceConflict.table">
+      <DependentUpon>AutoParserShiftReduceConflict.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Gramour\AutoParserShiftReduceConflict.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserShiftReduceConflict.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Visibility\AutoParserInternal.table">
+      <DependentUpon>AutoParserInternal.y</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parser\Generation\TypeHandling\AutoParserCast.table">
+      <DependentUpon>AutoParserCast.y</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parser\Generation\TableCompression\AutoParserCTB.table">
+      <DependentUpon>AutoParserCTB.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Gramour\AutoParserOptionalSegments.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserOptionalSegments.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Gramour\AutoParserMerge.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserMerge.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Gramour\AutoParserNoMerge.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserNoMerge.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\TableCompression\AutoParserCTB.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserCTB.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\TableCompression\AutoParserNone.table">
+      <DependentUpon>AutoParserNone.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\TableCompression\AutoParserNone.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserNone.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\TableCompression\AutoParserSimple.table">
+      <DependentUpon>AutoParserSimple.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\TableCompression\AutoParserSimple.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserSimple.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\TypeHandling\AutoParserCast.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserCast.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\TypeHandling\AutoParserField.table">
+      <DependentUpon>AutoParserField.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\TypeHandling\AutoParserField.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserField.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Visibility\AutoParserInternal.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserInternal.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Visibility\AutoParserPublic.table">
+      <DependentUpon>AutoParserPublic.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Visibility\AutoParserPublic.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserPublic.g.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Visibility\AutoParserTypeVisibility.table">
+      <DependentUpon>AutoParserTypeVisibility.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Visibility\AutoParserTypeVisibility.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserTypeVisibility.g.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lexer\Generation\Flags\RenderGraph.l">
+      <Generator>BuffaloLexer</Generator>
+      <LastGenOutput>RenderGraph.g.cs</LastGenOutput>
+    </None>
+    <None Include="Parser\Generation\Flags\AutoParserShowTable.txt">
+      <DependentUpon>AutoParserShowTable.y</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserIgnoredSegments.table">
+      <DependentUpon>AutoParserIgnoredSegments.y</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Parser\Generation\Gramour\AutoParserIgnoredSegments.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserIgnoredSegments.g.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Parser\Generation\Gramour\AutoParserMerge.txt">
+      <DependentUpon>AutoParserMerge.y</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lexer\Generation\Flags\RenderGraph.0.table">
+      <DependentUpon>RenderGraph.l</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lexer\Generation\Flags\RenderGraph.0.svg">
+      <DependentUpon>RenderGraph.l</DependentUpon>
+    </None>
+    <None Include="Parser\Generation\Gramour\AutoParserNoMerge.txt">
+      <DependentUpon>AutoParserNoMerge.y</DependentUpon>
+    </None>
+    <None Include="Parser\Generation\Gramour\AutoParserMergeNonTerminals.y">
+      <Generator>BuffaloParser</Generator>
+      <LastGenOutput>AutoParserMergeNonTerminals.g.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Parser\Generation\Gramour\AutoParserMergeNonTerminals.table">
+      <DependentUpon>AutoParserMergeNonTerminals.y</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers">
+      <Version>2.9.8</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Moq">
+      <Version>4.13.1</Version>
+    </PackageReference>
+    <PackageReference Include="NUnit">
+      <Version>3.12.0</Version>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers">
+      <Version>1.1.118</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>1.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="WTG.Analyzers">
+      <Version>2.0.7</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

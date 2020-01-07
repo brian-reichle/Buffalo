@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" width="1171" height="1134" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css"><![CDATA[
+rect
+{
+	fill: rgb(255,255,255);
+	stroke-width: 1;
+	stroke: rgb(0,0,0);
+}
+
+line, path
+{
+	stroke-width: 1;
+	stroke: rgb(0,0,0);
+	fill-opacity: 0.0;
+}
+
+text
+{
+	fill: rgb(0,0,0);
+	font-family: sans-serif;
+	font-size: 10px;
+	text-anchor: left;
+}
+
+text.si
+{
+	font-size: 20px;
+	text-anchor: end;
+}
+]]></style>
+	<g transform="translate(0,-17)">
+		<path d="M40,639 C227,639 102,835 290,835 C483,835 354,1042 548,1042" />
+		<path d="M40,639 C227,639 102,790 290,790 C483,790 354,962 548,962" />
+		<path d="M40,639 C227,639 102,745 290,745 C483,745 354,882 548,882" />
+		<path d="M40,639 C227,639 102,880 290,880 C483,880 354,1122 548,1122" />
+		<path d="M40,639 C227,639 102,700 290,700 C483,700 354,802 548,802" />
+		<path d="M40,639 C227,639 102,610 290,610 C483,610 354,642 548,642" />
+		<path d="M40,639 C227,639 102,565 290,565 C483,565 354,562 548,562" />
+		<path d="M40,639 C227,639 102,655 290,655 C483,655 354,722 548,722" />
+		<path d="M40,639 C227,639 102,492 290,492 C483,492 354,346 548,346" />
+		<path d="M40,639 C227,639 102,418 290,418 C483,418 354,197 548,197" />
+		<path d="M40,639 C227,639 102,342 290,342 C483,342 354,45 548,45" />
+		<path d="M548,562 C702,562 599,371 754,371 C863,371 790,293 900,293" />
+		<path d="M548,562 C516,562 516,454 548,454 C579,454 579,346 548,346" />
+		<path d="M548,722 C702,722 599,604 754,604 C863,604 790,487 900,487" />
+		<path d="M548,722 C483,722 483,500 548,500 C593,500 593,346 548,346" />
+		<path d="M548,346 C577,346 577,408 548,408 C519,408 519,346 548,346" />
+		<path d="M548,197 C702,197 599,169 754,169 C863,169 790,142 900,142" />
+		<path d="M548,197 C573,197 573,259 548,259 C523,259 523,197 548,197" />
+		<path d="M548,45 C578,45 578,107 548,107 C518,107 518,45 548,45" />
+		<path d="M900,293 C790,293 863,301 754,301 C599,301 702,346 548,346" />
+		<path d="M900,293 C987,293 929,269 1017,269 C1107,269 1047,246 1137,246" />
+		<path d="M900,487 C790,487 863,416 754,416 C599,416 702,346 548,346" />
+		<path d="M900,487 C987,487 929,442 1017,442 C1107,442 1047,398 1137,398" />
+		<path d="M900,142 C987,142 929,115 1017,115 C1107,115 1047,89 1137,89" />
+		<path d="M1137,246 C1047,246 1107,224 1017,224 C929,224 987,241 900,241 C790,241 863,262 754,262 C599,262 702,346 548,346" />
+		<path d="M1137,398 C1047,398 1107,355 1017,355 C929,355 987,345 900,345 C790,345 863,336 754,336 C599,336 702,346 548,346" />
+		<path d="M1137,89 C1112,89 1112,27 1137,27 C1162,27 1162,89 1137,89" />
+		<g transform="translate(0,612)">
+			<rect width="80" height="55" rx="20" />
+			<line x1="0" y1="25" x2="80" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">1</text>
+			<text x="5" y="40">Start: INITIAL</text>
+		</g>
+		<g transform="translate(511,1015)">
+			<rect width="75" height="55" rx="20" />
+			<line x1="0" y1="25" x2="75" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">2</text>
+			<text x="5" y="40">End: Subtract</text>
+		</g>
+		<g transform="translate(511,935)">
+			<rect width="75" height="55" rx="20" />
+			<line x1="0" y1="25" x2="75" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">3</text>
+			<text x="5" y="40">End: Multiply</text>
+		</g>
+		<g transform="translate(521,855)">
+			<rect width="55" height="55" rx="20" />
+			<line x1="0" y1="25" x2="55" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">4</text>
+			<text x="5" y="40">End: Plus</text>
+		</g>
+		<g transform="translate(516,1095)">
+			<rect width="65" height="55" rx="20" />
+			<line x1="0" y1="25" x2="65" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">5</text>
+			<text x="5" y="40">End: Divide</text>
+		</g>
+		<g transform="translate(508,775)">
+			<rect width="80" height="55" rx="20" />
+			<line x1="0" y1="25" x2="80" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">6</text>
+			<text x="5" y="40">End: OpenParen</text>
+		</g>
+		<g transform="translate(506,615)">
+			<rect width="85" height="55" rx="20" />
+			<line x1="0" y1="25" x2="85" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">7</text>
+			<text x="5" y="40">End: CloseParen</text>
+		</g>
+		<g transform="translate(518,535)">
+			<rect width="60" height="55" rx="20" />
+			<line x1="0" y1="25" x2="60" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">8</text>
+			<text x="5" y="40">End: Label</text>
+		</g>
+		<g transform="translate(518,695)">
+			<rect width="60" height="55" rx="20" />
+			<line x1="0" y1="25" x2="60" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">9</text>
+			<text x="5" y="40">End: Label</text>
+		</g>
+		<g transform="translate(518,319)">
+			<rect width="60" height="55" rx="20" />
+			<line x1="0" y1="25" x2="60" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">10</text>
+			<text x="5" y="40">End: Label</text>
+		</g>
+		<g transform="translate(516,170)">
+			<rect width="65" height="55" rx="20" />
+			<line x1="0" y1="25" x2="65" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">11</text>
+			<text x="5" y="40">End: Number</text>
+		</g>
+		<g transform="translate(506,18)">
+			<rect width="85" height="55" rx="20" />
+			<line x1="0" y1="25" x2="85" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">12</text>
+			<text x="5" y="40">End: Whitespace</text>
+		</g>
+		<g transform="translate(870,266)">
+			<rect width="60" height="55" rx="20" />
+			<line x1="0" y1="25" x2="60" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">13</text>
+			<text x="5" y="40">End: Label</text>
+		</g>
+		<g transform="translate(870,460)">
+			<rect width="60" height="55" rx="20" />
+			<line x1="0" y1="25" x2="60" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">14</text>
+			<text x="5" y="40">End: Label</text>
+		</g>
+		<g transform="translate(875,115)">
+			<rect width="50" height="55" rx="20" />
+			<line x1="0" y1="25" x2="50" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">15</text>
+		</g>
+		<g transform="translate(1112,219)">
+			<rect width="50" height="55" rx="20" />
+			<line x1="0" y1="25" x2="50" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">16</text>
+			<text x="5" y="40">End: Cat</text>
+		</g>
+		<g transform="translate(1112,371)">
+			<rect width="50" height="55" rx="20" />
+			<line x1="0" y1="25" x2="50" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">17</text>
+			<text x="5" y="40">End: Dog</text>
+		</g>
+		<g transform="translate(1105,62)">
+			<rect width="65" height="55" rx="20" />
+			<line x1="0" y1="25" x2="65" y2="25" />
+			<line x1="35" y1="0" x2="35" y2="25" />
+			<text x="30" y="20" class="si">18</text>
+			<text x="5" y="40">End: Number</text>
+		</g>
+		<g transform="translate(278,825)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[-]</text>
+		</g>
+		<g transform="translate(278,780)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[*]</text>
+		</g>
+		<g transform="translate(278,735)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[+]</text>
+		</g>
+		<g transform="translate(278,870)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[/]</text>
+		</g>
+		<g transform="translate(278,690)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[(]</text>
+		</g>
+		<g transform="translate(278,600)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[)]</text>
+		</g>
+		<g transform="translate(278,555)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[c]</text>
+		</g>
+		<g transform="translate(278,645)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[d]</text>
+		</g>
+		<g transform="translate(253,482)">
+			<rect width="75" height="20" />
+			<text x="5" y="15">[A-Z,a-b,e-z]</text>
+		</g>
+		<g transform="translate(273,408)">
+			<rect width="35" height="20" />
+			<text x="5" y="15">[0-9]</text>
+		</g>
+		<g transform="translate(263,332)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">[\t-\r, ]</text>
+		</g>
+		<g transform="translate(742,361)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[a]</text>
+		</g>
+		<g transform="translate(511,444)">
+			<rect width="75" height="20" />
+			<text x="5" y="15">[0-9,A-Z,b-z]</text>
+		</g>
+		<g transform="translate(742,594)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[o]</text>
+		</g>
+		<g transform="translate(501,490)">
+			<rect width="95" height="20" />
+			<text x="5" y="15">[0-9,A-Z,a-n,p-z]</text>
+		</g>
+		<g transform="translate(511,398)">
+			<rect width="75" height="20" />
+			<text x="5" y="15">[0-9,A-Z,a-z]</text>
+		</g>
+		<g transform="translate(742,159)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[.]</text>
+		</g>
+		<g transform="translate(531,249)">
+			<rect width="35" height="20" />
+			<text x="5" y="15">[0-9]</text>
+		</g>
+		<g transform="translate(521,97)">
+			<rect width="55" height="20" />
+			<text x="5" y="15">[\t-\r, ]</text>
+		</g>
+		<g transform="translate(707,291)">
+			<rect width="95" height="20" />
+			<text x="5" y="15">[0-9,A-Z,a-s,u-z]</text>
+		</g>
+		<g transform="translate(1005,259)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[t]</text>
+		</g>
+		<g transform="translate(707,406)">
+			<rect width="95" height="20" />
+			<text x="5" y="15">[0-9,A-Z,a-f,h-z]</text>
+		</g>
+		<g transform="translate(1005,432)">
+			<rect width="25" height="20" />
+			<text x="5" y="15">[g]</text>
+		</g>
+		<g transform="translate(1000,105)">
+			<rect width="35" height="20" />
+			<text x="5" y="15">[0-9]</text>
+		</g>
+		<g transform="translate(980,214)">
+			<rect width="75" height="20" />
+			<text x="5" y="15">[0-9,A-Z,a-z]</text>
+		</g>
+		<g transform="translate(980,345)">
+			<rect width="75" height="20" />
+			<text x="5" y="15">[0-9,A-Z,a-z]</text>
+		</g>
+		<g transform="translate(1120,17)">
+			<rect width="35" height="20" />
+			<text x="5" y="15">[0-9]</text>
+		</g>
+	</g>
+</svg>

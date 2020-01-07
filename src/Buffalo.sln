@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffalo.Core", "Buffalo.Core\Buffalo.Core.csproj", "{EC78D823-AD6A-4FA3-A968-EFF73D657D6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffalo.Core.Test", "Buffalo.Core.Test\Buffalo.Core.Test.csproj", "{0F1269FD-E465-4AA1-8484-4EA77BED3868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffalo.Main", "Buffalo.Main\Buffalo.Main.csproj", "{FCBB1530-99AB-4920-8671-FC2C49B08A77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffalo.Main.Test", "Buffalo.Main.Test\Buffalo.Main.Test.csproj", "{60F3E776-D5F0-4065-959B-009D1DA2AB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffalo.TestResources", "Buffalo.TestResources\Buffalo.TestResources.csproj", "{5D34EE02-9E6C-4396-AAEF-E19823ED9438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buffalo.Vsix", "Buffalo.Vsix\Buffalo.Vsix.csproj", "{D650FB91-FE27-48B6-AE7C-B90EB5A1C060}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC78D823-AD6A-4FA3-A968-EFF73D657D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC78D823-AD6A-4FA3-A968-EFF73D657D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC78D823-AD6A-4FA3-A968-EFF73D657D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC78D823-AD6A-4FA3-A968-EFF73D657D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1269FD-E465-4AA1-8484-4EA77BED3868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1269FD-E465-4AA1-8484-4EA77BED3868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1269FD-E465-4AA1-8484-4EA77BED3868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1269FD-E465-4AA1-8484-4EA77BED3868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCBB1530-99AB-4920-8671-FC2C49B08A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBB1530-99AB-4920-8671-FC2C49B08A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBB1530-99AB-4920-8671-FC2C49B08A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBB1530-99AB-4920-8671-FC2C49B08A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F3E776-D5F0-4065-959B-009D1DA2AB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F3E776-D5F0-4065-959B-009D1DA2AB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F3E776-D5F0-4065-959B-009D1DA2AB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F3E776-D5F0-4065-959B-009D1DA2AB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D34EE02-9E6C-4396-AAEF-E19823ED9438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D34EE02-9E6C-4396-AAEF-E19823ED9438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D34EE02-9E6C-4396-AAEF-E19823ED9438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D34EE02-9E6C-4396-AAEF-E19823ED9438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D650FB91-FE27-48B6-AE7C-B90EB5A1C060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D650FB91-FE27-48B6-AE7C-B90EB5A1C060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D650FB91-FE27-48B6-AE7C-B90EB5A1C060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D650FB91-FE27-48B6-AE7C-B90EB5A1C060}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A821019-5490-4A66-A68E-417BDA5CFE21}
+	EndGlobalSection
+EndGlobal
