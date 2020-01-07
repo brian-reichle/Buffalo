@@ -1,0 +1,22 @@
+version: 0.1.0.{build}
+
+os: Visual Studio 2019
+
+configuration:
+  - Debug
+  - Release
+
+init:
+  - git config --global core.autocrlf true
+
+environment:
+  CreateVsixContainer: False
+  DeployExtension: False
+
+before_build:
+  - nuget restore src\Buffalo.sln
+
+build:
+  parallel: true
+  project: src\Buffalo.sln
+  verbosity: minimal
